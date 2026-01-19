@@ -6,16 +6,25 @@
     <title>Playbook-P5-TM14</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 14 - 5to Primaria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 14 - 5o de Primaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
                 <span id="global-timer">⏱️ 40:00</span>
                 <button id="global-start-stop">Start</button>
                 <button id="global-reset">Reset</button>
+            </div>
+            <!-- Estructura del Theme Toggle agregada -->
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
             </div>
         </div>
     </header>
@@ -49,6 +58,7 @@
                 <div class="command-section xolo-prompt">
                     <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
                     <div class="prompt-box">
+                        <!-- Estructura de botón de copiado agregada -->
                         <div class="prompt-header">
                             <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
                             <button class="copy-btn" onclick="copyPrompt('main-prompt')">
@@ -161,6 +171,8 @@
                     <h2>🚀 Actividad 1: Intro a la Misión</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 2:00</span>
+                        <!-- Botón de timer agregado -->
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -205,6 +217,8 @@
                     <h2>🧠 Actividad 2: A.I. Gym</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 8:00</span>
+                        <!-- Botón de timer agregado -->
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -249,7 +263,8 @@
                     </div>
                 </div>
                 <div class="optional-script">
-                    <button class="collapsible-button" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">📖 Ver guion detallado (opcional)</button>
+                    <!-- Javascript inline eliminado -->
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
                     <div class="collapsible-content">
                         <p class="dialogue assistant">¡Hola a todos! Ahora vamos a entrar al A.I. Gym. Es momento de que abran su chat con XOLO y lo saluden. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy sobre cómo hacer que sus robots sean más precisos. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Él les explicará cómo la Smart A.I. Lens puede a veces confundirse y cómo podemos ayudarla a ser más confiable. ¡Pregúntenle todo lo que necesiten!</p>
                     </div>
@@ -261,6 +276,8 @@
                     <h2>💡 Actividad 3: Brain Spark</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 20:00</span>
+                        <!-- Botón de timer agregado -->
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -310,7 +327,8 @@
                     </div>
                 </div>
                 <div class="optional-script">
-                    <button class="collapsible-button" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">📖 Ver guion detallado (opcional)</button>
+                    <!-- Javascript inline eliminado -->
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
                     <div class="collapsible-content">
                         <p class="dialogue assistant">¡Es hora de crear, genios! Vamos a usar lo que aprendimos para que nuestro robot sea súper confiable. Pídanle a XOLO que los ayude a idear un proyecto donde el robot deba reconocer símbolos con mucha precisión. Por ejemplo, podrían hacer un robot clasificador que solo avance si está 100% seguro de lo que ve. Sigan el flujo: ideen con XOLO, obtengan su GCS, pásenlo a MakeCode y experimenten. No olviden las preguntas de experimentación para ver qué tan lejos pueden llegar. Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar.</p>
                     </div>
@@ -329,6 +347,8 @@
                     <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 5:00</span>
+                        <!-- Botón de timer agregado -->
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -383,6 +403,8 @@
                     <h2>✅ Actividad 5: Entrega de Evidencias</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 5:00</span>
+                        <!-- Botón de timer agregado -->
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -426,6 +448,6 @@
             </div>
         </main>
     </div>
-        <script src="script.js"></script>
-    </body>
-</html></html>
+    <script src="script.js"></script>
+</body>
+</html>
